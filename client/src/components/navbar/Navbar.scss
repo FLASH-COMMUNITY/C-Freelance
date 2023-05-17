@@ -1,11 +1,13 @@
 .navbar {
+  font-family: josefin-sans, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #013914;
+  background-color: #ffffff;
   color: white;
   position: sticky;
   top: 0;
+  font-size: 15px;
   z-index: 999;
   transition: 0.5s all ease;
 
@@ -31,57 +33,51 @@
       font-size: 34px;
       font-weight: bold;
 
+
+
       .text {
+
+      
+          img{
+            width: 50px;
+            height: 50px;
+          
+          }
+        
       }
 
       .dot {
         font-weight: bold;
         color: #1dbf73;
       }
+
+
     }
     .links {
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      
       gap: 24px;
       font-family: "Montserrat", sans-serif;
-      font-weight: 500;
+      font-weight: bold;
+      color: black;
+      
+    
+      .link_explore{
+          color: #1dbf73;
+      }
 
+   
       span {
+
+       
+  
+
         white-space: nowrap;
       }
 
-      .user {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        cursor: pointer;
-        position: relative;
-
-        img {
-          width: 32px;
-          height: 32px;
-          border-radius: 50%;
-          object-fit: cover;
-        }
-
-        .options {
-          position: absolute;
-          top: 50px;
-          right: 0;
-          padding: 20px;
-          background-color: white;
-          border-radius: 10px;
-          z-index: 999;
-          border: 1px solid lightgrey;
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-          width: 200px;
-          font-weight: 300;
-          color: gray;
-        }
-      }
-
+   
       button {
         color: white;
         padding: 10px 20px;
@@ -95,6 +91,83 @@
           border-color: #1dbf73;
         }
       }
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      position: relative;
+
+      img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      link{
+
+        color: black;
+        padding: 1rem 2rem;
+
+      }
+
+      span{
+        color: black;
+        font-weight: bold;
+      }
+      .options {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        z-index: 999;
+        border: 1px solid lightgrey;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 200px;
+        font-weight: 300;
+        color: gray;
+      }
+    }
+
+
+    .account{
+
+      .link:nth-child(1){
+      
+
+        button{
+          color: black;
+          // margin-left: 1rem;
+          padding: 1rem 2rem;
+          background-color: #1dbf73;
+          color: white;
+          cursor: pointer;
+          border: 1px solid #1dbf73;
+
+          
+        }
+
+        
+
+      
+      }
+      .link:nth-child(2){
+        button{
+          padding: 1rem 2rem;
+          background-color: white;
+          color: #1dbf73;
+          border: none;
+          outline: none;
+          border: 1px solid #1dbf73;
+        }
+      }
+    
     }
   }
 
