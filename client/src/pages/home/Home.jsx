@@ -7,6 +7,7 @@ import CatCard from "../../components/catCard/CatCard";
 import ProjectCard from "../../components/projectCard/ProjectCard";
 import { cards, projects } from "../../data";
 import NewLetter from "../../components/newLetter/NewLetter";
+import VideoCard from "../../components/videoCard/VideoCard";
 
 function Home() {
   return (
@@ -76,6 +77,10 @@ function Home() {
         </div>
       </div>
           <NewLetter/>
+          <VideoCard  id="demo-player"
+          publicId="pll664hpfnflf4pgp3wb"
+        />
+
 
 
       {/* <div className="explore">
