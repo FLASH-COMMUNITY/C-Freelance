@@ -78,7 +78,7 @@ function Home() {
       </div>
           <NewLetter/>
           <VideoCard  id="demo-player"
-          publicId="pll664hpfnflf4pgp3wb"
+          publicId="q0zacg42sdhxrwplisvl"
         />
 
 
