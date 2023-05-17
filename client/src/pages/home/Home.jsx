@@ -6,61 +6,79 @@ import Slide from "../../components/slide/Slide";
 import CatCard from "../../components/catCard/CatCard";
 import ProjectCard from "../../components/projectCard/ProjectCard";
 import { cards, projects } from "../../data";
+import NewLetter from "../../components/newLetter/NewLetter";
 
 function Home() {
   return (
     <div className="home">
       <Featured />
       {/* <TrustedBy /> */}
-       <Slide slidesToShow={5} arrowsScroll={5}>
+      <Slide slidesToShow={5} arrowsScroll={5}>
         {cards.map((card) => (
           <CatCard key={card.id} card={card} />
         ))}
       </Slide>
-      {/*
-      <div className="features">
+
+      <div className="missions">
         <div className="container">
-          <div className="item">
-            <h1>A whole world of freelance talent at your fingertips</h1>
-            <div className="title">
-              <img src="./img/check.png" alt="" />
-              The best for every budget
-            </div>
-            <p>
-              Find high-quality services at every price point. No hourly rates,
-              just project-based pricing.
+          <div className="left">
+            <span> WHO WE DO </span>
+            <h1>
+              We Create Innovative <br /> Solutions for Industries
+            </h1>
+            <p className="p1">
+              Here at Spatium Innovation Hub we know the importance of
+              technology as a source of innovation and as a critical success
+              factor for increased market competitiveness
             </p>
-            <div className="title">
-              <img src="./img/check.png" alt="" />
-              Quality work done quickly
-            </div>
-            <p>
-              Find the right freelancer to begin working on your project within
-              minutes.
-            </p>
-            <div className="title">
-              <img src="./img/check.png" alt="" />
-              Protected payments, every time
-            </div>
-            <p>
-              Always know what you'll pay upfront. Your payment isn't released
-              until you approve the work.
-            </p>
-            <div className="title">
-              <img src="./img/check.png" alt="" />
-              24/7 support
-            </div>
-            <p>
-              Find high-quality services at every price point. No hourly rates,
-              just project-based pricing.
+            <p className="p2">
+              We provide professional and exemptional database management,
+              process automation and enterprise applications. We offer a vast
+              range of IT services and digital solutions such as web/multimedia
+              design and mobile and web application development.
             </p>
           </div>
-          <div className="item">
-            <video src="./img/video.mp4" controls />
+
+          <div className="right">
+            <div className="item">
+              <h1> Identity Management & Verification</h1>
+
+              <p>
+                Our Identity Management solution is the authentication process
+                of determining whether a person is who he or she claims to be.
+              </p>
+            </div>
+            <div className="item">
+              <h1> Identity Management & Verification</h1>
+
+              <p>
+                Our Identity Management solution is the authentication process
+                of determining whether a person is who he or she claims to be.
+              </p>
+            </div>
+            <div className="item">
+              <h1> Identity Management & Verification</h1>
+
+              <p>
+                Our Identity Management solution is the authentication process
+                of determining whether a person is who he or she claims to be.
+              </p>
+            </div>
+            <div className="item">
+              <h1> Identity Management & Verification</h1>
+
+              <p>
+                Our Identity Management solution is the authentication process
+                of determining whether a person is who he or she claims to be.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div className="explore">
+          <NewLetter/>
+
+
+      {/* <div className="explore">
         <div className="container">
           <h1>Explore the marketplace</h1>
           <div className="items">
@@ -184,14 +202,13 @@ function Home() {
             />
           </div>
         </div>
-      </div>
-      <Slide slidesToShow={4} arrowsScroll={4}>
+      </div> */}
+      {/* <Slide slidesToShow={4} arrowsScroll={4}>
         {projects.map((card) => (
           <ProjectCard key={card.id} card={card} />
         ))}
-      </Slide> */}
+      </Slide>  */}
     </div>
-   
   );
 }
 

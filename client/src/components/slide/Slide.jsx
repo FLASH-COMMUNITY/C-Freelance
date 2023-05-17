@@ -6,9 +6,8 @@ const Slide = ({ children, slidesToShow, arrowsScroll }) => {
   return (
     <div className="slide">
       <div className="header">
-      <h1>The lash of the publication</h1>
-      <span>Good publication that user do for us</span>
-
+        <h1>The lash of the publication</h1>
+        <span>Good publication that user do for us</span>
       </div>
       <div className="container">
         <Slider slidesToShow={slidesToShow} arrowsScroll={arrowsScroll}>

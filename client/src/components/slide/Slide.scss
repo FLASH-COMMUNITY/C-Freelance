@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+
+
+
 .slide {
 
 
@@ -19,16 +26,20 @@
       font-weight: bold;
       width: fit-content;
       position: relative;
+      font-family: 'Prompt', sans-serif;
 
 
+margin-bottom: 0.5rem;
 
     }
 
     
     span{
 
+      font-family: 'Ysabeau', sans-serif; 
+
       font-size: 15px;
-      margin-top: 20px;
+      margin-top: 2rem;
       position: relative;
       width: fit-content;
 
