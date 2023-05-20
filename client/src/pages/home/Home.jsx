@@ -16,7 +16,7 @@ function Home() {
       {/* <TrustedBy /> */}
       <Slide slidesToShow={5} arrowsScroll={5}>
         {cards.map((card) => (
-          <CatCard key={card.id} card={card} />
+          <CatCard key={card.id} cat={card.cat} card={card} />
         ))}
       </Slide>
 

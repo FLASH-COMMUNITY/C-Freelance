@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./CatCard.scss";
 
-function CatCard({ card }) {
+function CatCard({ card , cat }) {
   return (
-    <Link className="link" to="/gigs?cat=design">
+    <Link className="link" to={`/gigs?cat=${cat}`}>
       {/* <div className="catCard">
         <img src={card.img} alt="" />
         <span className="desc">{card.desc}</span>
@@ -26,7 +26,7 @@ function CatCard({ card }) {
           <div className="bottom">
             <span className="desc">I will design think for you</span>
             <div className="price">
-              <h2>50.000,0 Fcfa</h2> <span>Prix</span>
+              <h2>50.000,0 Fcfa</h2> <span>{cat}</span>
             </div>
             <div className="score">
               {" "}
