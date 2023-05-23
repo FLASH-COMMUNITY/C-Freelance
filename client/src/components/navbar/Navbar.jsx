@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import newRequest from "../../utils/newRequest";
+
 import "./Navbar.scss";
 
 function Navbar() {
@@ -24,15 +24,6 @@ function Navbar() {
 
   const navigate = useNavigate();
 
-  const handleLogout = async () => {
-    try {
-      await newRequest.post("/auth/logout");
-      localStorage.setItem("currentUser", null);
-      navigate("/");
-    } catch (err) {
-      console.log(err);
-    }
-  };
 
   return (
     <div className={active || pathname !== "/" ? "navbar active" : "navbar"}>
@@ -74,7 +65,7 @@ function Navbar() {
                   <Link className="link" to="/messages">
                     Messages
                   </Link>
-                  <Link className="link" onClick={handleLogout}>
+                  <Link className="link">
                     Logout
                   </Link>
                 </div>
